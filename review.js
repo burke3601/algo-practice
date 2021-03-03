@@ -1,4 +1,54 @@
 // --- Directions
+// Given an array and chunk size, divide the array into many subarrays
+// where each subarray is of length size
+// --- Examples
+// chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
+// chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
+// chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
+// chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
+// chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+
+
+function chunk(array, size) {
+   const chunked  = []
+   let index = 0;
+ 
+   while(index < array.length) {
+       chunked.push(array.slice(index, index + size));
+       index += size;
+   }
+   return chunked;
+ }
+
+ console.log(chunk([1, 2, 3, 4, 5], 2) )
+
+
+
+
+// --- Directions
+// Check to see if two provided strings are anagrams of eachother.
+// One string is an anagram of another if it uses the same characters
+// in the same quantity. Only consider characters, not spaces
+// or punctuation.  Consider capital letters to be the same as lower case
+// --- Examples
+//   anagrams('rail safety', 'fairy tales') --> True
+//   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+//   anagrams('Hi there', 'Bye there') --> False
+
+function anagrams(stringA, stringB) {
+   
+   }
+
+stringA = "HeLlo! yoU"
+stringB = "helloyou"
+
+console.log(stringB.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
+console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
+
+
+
+
+// --- Directions
 // Given an integer, return an integer that is the reverse
 // ordering of numbers.
 // --- Examples
@@ -8,17 +58,17 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function revNum(int){
-    const reversed = ((int).toString().split('').reverse().join(''))
-    if (int < 0){
-       return parseInt(reversed) * (-1)
-    }
-    else {
-    return parseInt(reversed)
-    }
-}
+// function revNum(int){
+//     const reversed = ((int).toString().split('').reverse().join(''))
+//     if (int < 0){
+//        return parseInt(reversed) * (-1)
+//     }
+//     else {
+//     return parseInt(reversed)
+//     }
+// }
 
-console.log(revNum(-41))
+// console.log(revNum(-41))
    
 
 // --- Directions
