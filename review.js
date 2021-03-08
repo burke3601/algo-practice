@@ -9,18 +9,18 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 
-function chunk(array, size) {
-   const chunked  = []
-   let index = 0;
+// function chunk(array, size) {
+//    const chunked  = []
+//    let index = 0;
  
-   while(index < array.length) {
-       chunked.push(array.slice(index, index + size));
-       index += size;
-   }
-   return chunked;
- }
+//    while(index < array.length) {
+//        chunked.push(array.slice(index, index + size));
+//        index += size;
+//    }
+//    return chunked;
+//  }
 
- console.log(chunk([1, 2, 3, 4, 5], 2) )
+//  console.log(chunk([1, 2, 3, 4, 5], 2) )
 
 
 
@@ -35,15 +35,15 @@ function chunk(array, size) {
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
+// function anagrams(stringA, stringB) {
    
-   }
+//    }
 
-stringA = "HeLlo! yoU"
-stringB = "helloyou"
+// stringA = "HeLlo! yoU"
+// stringB = "helloyou"
 
-console.log(stringB.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
-console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
+// console.log(stringB.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
+// console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""))
 
 
 
@@ -57,6 +57,34 @@ console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""
 //   reverseInt(500) === 5
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
+
+
+
+// function revNum(int) {
+//    const num1 = int.toString().split('').reverse().join('');
+//    if (int < 0) {
+//       return parseInt(num1 * -1)
+//    } else {
+//    return parseInt(num1)
+//    }
+   
+// }
+// console.log(revNum(-1234))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function revNum(int){
 //     const reversed = ((int).toString().split('').reverse().join(''))
@@ -80,6 +108,34 @@ console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
+
+
+// let str = "abqewqwerfvba"
+// function pal(str) {
+//    let palin = str.split("").reverse().join("")
+
+//    if (str === palin){
+//       return true
+//    } else {
+//       return false
+//    }
+
+// }
+
+// console.log(pal(str))
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const reverse = require("../reversestring");
 
 // function pal(str) {
@@ -91,6 +147,29 @@ console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(""
 // }
 // console.log(pal('abffffffffa'))
 // console.log(pal('kayak'))
+
+
+// --- Directions
+// Given a string, return a new string with the reversed
+// order of characters
+// --- Examples
+//   reverse('apple') === 'leppa'
+//   reverse('hello') === 'olleh'
+//   reverse('Greetings!') === '!sgniteerG'
+
+// let str = 'olleh'
+// function rev(str) {
+
+   
+   
+// }
+// console.log(str.split('').reverse().join(""))
+
+// rev()
+
+
+
+
 
 
 
