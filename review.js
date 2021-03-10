@@ -1,4 +1,71 @@
 // --- Directions
+// Write a function that accepts a string.  The function should
+// capitalize the first letter of each word in the string then
+// return the capitalized string.
+// --- Examples
+//   capitalize('a short sentence') --> 'A Short Sentence'
+//   capitalize('a lazy fox') --> 'A Lazy Fox'
+//   capitalize('look, it is working!') --> 'Look, It Is Working!'
+
+
+//the one at the bottom is better, more legible
+function capitalize(str) {
+   const words = [];
+
+   for (let word of str.split(" ")) {
+      words.push(word[0].toUppercase() + word.slice(1));
+   }
+   
+   return words.join(' ');
+   
+    
+  
+}
+
+const words = [];
+let str = 'a little dog'
+for (let word of str.split(" ")) {
+   words.push(word[0].toUppercase() + word.slice(1));
+}
+words.join(' ')
+console.log(words);
+
+
+
+
+// --- Directions
+// Check to see if two provided strings are anagrams of eachother.
+// One string is an anagram of another if it uses the same characters
+// in the same quantity. Only consider characters, not spaces
+// or punctuation.  Consider capital letters to be the same as lower case
+// --- Examples
+//   anagrams('rail safety', 'fairy tales') --> True
+//   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+//   anagrams('Hi there', 'Bye there') --> False
+
+// function anagrams(stringA, stringB) {
+ 
+// }
+
+
+// module.exports = anagrams;
+
+// const word = "Hi THERE!!!!"
+
+// const word2 = "erehthi"
+
+// console.log(word.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(''))
+
+// console.log(word2.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(''))
+
+
+
+
+
+
+
+
+// --- Directions
 // Given an array and chunk size, divide the array into many subarrays
 // where each subarray is of length size
 // --- Examples
@@ -10,17 +77,47 @@
 
 
 // function chunk(array, size) {
-//    const chunked  = []
-//    let index = 0;
- 
-//    while(index < array.length) {
-//        chunked.push(array.slice(index, index + size));
-//        index += size;
+//   const chunked = [];
+//   let index = 0
+
+//   for (let element of array) {
+//    const last = chunked[chunked.length -1]
+
+//    if (!last || last.length === size){
+//       chunked.push([element]);
+//    } else {
+//       last.push(element)
 //    }
-//    return chunked;
+//   }
+
+//   return chunked;
+
+
 //  }
 
-//  console.log(chunk([1, 2, 3, 4, 5], 2) )
+// console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 4))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  const chunked  = []
+//  let index = 0;
+
+//  while(index < array.length) {
+//      chunked.push(array.slice(index, index + size));
+//      index += size;
+//  }
+//  return chunked;
 
 
 
