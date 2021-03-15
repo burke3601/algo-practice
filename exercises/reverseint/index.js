@@ -9,19 +9,49 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-   const reversed = n.toString().split('').reverse().join('');
+   let revN =  n.toString().split('').reverse().join('')
+   let revNum = parseInt(revN)
+   if (n < 0){
+       return revNum * -1
+   } else{
+      return revNum
+   }
 
-  
-   return parseInt(reversed) * Math.sign(n)
 }
+
+console.log(reverseInt(-1234))
+
+
+// let n = 654321
+// let reversed = n.toString().split('').reverse().join('')
+// console.log(parseInt(reversed))
+
+
 
 module.exports = reverseInt;
 
-const num = -200
-console.log(num.toString().split('').reverse())
-console.log(num.toString().split('').reverse().join(''))
-console.log(parseInt(num.toString().split('').reverse().join('')))
-console.log(Math.sign(parseInt(num.toString().split('').reverse().join(''))))
+
+
+
+
+
+
+
+
+
+
+// const reversed = n.toString().split('').reverse().join('');
+
+  
+// return parseInt(reversed) * Math.sign(n)
+// const num = -200
+
+
+
+// console.log(num.toString().split('').reverse())
+// console.log(num.toString().split('').reverse().join(''))
+// console.log(parseInt(num.toString().split('').reverse().join('')))
+// console.log(Math.sign(parseInt(num.toString().split('').reverse().join(''))))
 
 // console.log(Math.sign(900))
 

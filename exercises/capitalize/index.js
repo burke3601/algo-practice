@@ -20,6 +20,7 @@ return words.join(' ');
    
   
 }
+console.log(capitalize('a little dog'))
 module.exports = capitalize;
 
 

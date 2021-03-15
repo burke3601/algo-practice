@@ -9,18 +9,19 @@
 
 
 //the one at the bottom is better, more legible
-function capitalize(str) {
-   const words = [];
+// function capitalize(str) {
+//    // const words = [];
 
-   for (let word of str.split(" ")) {
-      words.push(word[0].toUppercase() + word.slice(1));
-   }
+//    // for (let word of str.split(" ")) {
+//    //    words.push(word[0].toUppercase() + word.slice(1));
+//    // }
    
-   return words.join(' ');
+//    // return words.join(' ');
    
     
   
-}
+// }
+
 
 const words = [];
 let str = 'a little dog'

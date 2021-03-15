@@ -9,16 +9,20 @@
 
 function reverse(str) {
     
-  return str.split('').reduce((reversed, character) => {
-    
-    console.log(character + reversed)
-    return character + reversed
-  }, '')
+const arr = str.split('');
+return arr.reverse().join("");
+
 }
 
-reverse('abcdefg')
+console.log(reverse('abcdefg'))
 
 module.exports = reverse;
+
+// return str.split('').reduce((reversed, character) => {
+    
+//   console.log(character + reversed)
+//   return character + reversed
+// }, '')
 
 //second option
 // function reverse(str) {

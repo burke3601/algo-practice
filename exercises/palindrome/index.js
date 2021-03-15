@@ -11,15 +11,29 @@
 
 function palindrome(str) {
 
-    return str.split('').every((char, i) => {
-        return char === str[str.length -i -1];
-    })
+  let pal = str.split('').reverse().join('')
+
+  if (pal === str){
+      return true
+  } else { 
+      return false
+  }
 
 }
-
+console.log(palindrome('abqwsdfervdsba'))
 
 module.exports = palindrome;
 
+
+
+
+
+
+
+
+// return str.split('').every((char, i) => {
+//     return char === str[str.length -i -1];
+// })
 
 //reverse
 // function palindrome(str) {
