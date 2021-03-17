@@ -10,7 +10,15 @@
 
 function anagrams(stringA, stringB) {
 
+
+
 }
+let stringA = "rAil safety"
+let stringB = "fairy tales"
+
+console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(''))
+
+
 
 
 module.exports = anagrams;
@@ -62,8 +70,7 @@ module.exports = anagrams;
 
 // return charMap;
 
-stringA = 'hello!'
-stringB = 'ohLle '
+
 
 // stringA.replace(/[^\w]/g, "").split('').sort().join('').toLowerCase();
 // stringB.replace(/[^\w]/g, "").split('').sort().join('').toLowerCase();

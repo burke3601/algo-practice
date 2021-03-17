@@ -12,23 +12,41 @@
 
 
 function chunk(array, size) {
-  const chunked  = []
-  let index = 0;
+const chunkedArray = [];
 
-  while(index < array.length) {
-      chunked.push(array.slice(index, index + size));
-      index += size;
+
+
+for (let el of array) {
+  const last = chunkedArray[chunkedArray.length -1];
+
+  if (!last || last.length === size){
+    chunkedArray.push([el]);
   }
-
-  return chunked;
-
+  else {
+    last.push(el)
+  }
+}
+return chunkedArray;
 
 }
 
 
 
-console.log(chunk([1,2,3,4,5,6,7,8], 5))
+console.log(chunk([1,2,3,4,5,6,7,8], 2))
 module.exports = chunk;
+
+
+
+
+// const chunked  = []
+// let index = 0;
+
+// while(index < array.length) {
+//     chunked.push(array.slice(index, index + size));
+//     index += size;
+// }
+
+// return chunked;
 
 
 
