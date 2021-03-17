@@ -1,3 +1,98 @@
+// function diagonalDifference(arr) {
+   
+
+// }
+// let arr =
+// [1,2,3,
+//  4,5,6,
+//  7,8,9];
+//1+5+9 = 15
+//3+5+7 = 15
+ //[1,2,3,4,5,6,7,8,9]
+
+ //[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+ //[0,1,2,3,
+//  4,5,6,7,
+//  8,9,10,11,
+//  12,13,14,15]
+
+
+
+
+
+// function aVeryBigSum(ar) {
+
+// let long = 0;
+// for (let n in ar) { long += ar[n]; }
+   
+// return long
+
+// }
+// let ar = [1,2,3,4]
+// aVeryBigSum(ar)
+
+
+// function compareTriplets(a, b) {
+//    let counterA = 0,counterB = 0;
+
+//    for(let i=0;i<a.length;i++){
+//        if(a[i] > b[i]){
+//            counterA++;
+//        }
+//        else if(a[i] < b[i]){
+//            counterB++;
+//        }
+//    }
+
+//    return [counterA,counterB];
+   
+
+// }
+// let a = [1, 2, 3]
+// let b = [3, 2, 1]
+
+// console.log(compareTriplets(a,b))
+
+
+
+
+
+
+
+// function oddNumbers(l, r) {
+//    var x = [],
+//    i = Math.floor(l/2) * 2 + 1;
+
+//    while (i<r) {
+//       x.push(i);
+//       i += 2;
+//    }
+//    return x
+
+// }
+
+// console.log(oddNumbers(6, 18))
+
+
+// function simpleArraySum(ar) {
+  
+
+// }
+
+// let arr = [1,2,3,4];
+// let total=0;
+// for(let i in arr) { total += arr[i]; }
+   
+// console.log(total)
+
+
+
+
+
+
+
+
 // --- Directions
 // Write a function that accepts a string.  The function should
 // capitalize the first letter of each word in the string then
@@ -22,14 +117,14 @@
   
 // }
 
-
-const words = [];
-let str = 'a little dog'
-for (let word of str.split(" ")) {
-   words.push(word[0].toUppercase() + word.slice(1));
-}
-words.join(' ')
-console.log(words);
+//
+// const words = [];
+// let str = 'a little dog'
+// for (let word of str.split(" ")) {
+//    words.push(word[0].toUppercase() + word.slice(1));
+// }
+// words.join(' ')
+// console.log(words);
 
 
 

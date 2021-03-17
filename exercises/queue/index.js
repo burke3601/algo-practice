@@ -9,7 +9,7 @@
 //     q.remove(); // returns 1;
 
 class Queue {
-    costructor() {
+    constructor() {
         this.data = [];
 
     }
