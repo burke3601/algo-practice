@@ -80,11 +80,12 @@
 
 // }
 
-// let arr = [1,2,3,4];
-// let total=0;
-// for(let i in arr) { total += arr[i]; }
+let numbers = [1,2,3,4];
+let total=0;
+for(let i in numbers) 
+{ total += numbers[i]; }
    
-// console.log(total)
+console.log(total)
 
 
 
