@@ -8,21 +8,73 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 
-//the one at the bottom is better, more legible
-function capitalize(str) {
 
+function capitalize(str) {
   const words = [];
 
-for (let word of str.split(' ')){
-    words.push(word[0].toUpperCase() + word.slice(1));
-}
-return words.join(' ');
+  for(let word of str.split(' ')) {
+    words.push(word[0].toUpperCase() + word.slice(1))
+  }
+
+
+return words.join(' ')
+
+ }
+
+ console.log(capitalize("I am a fun guy and i like to party"))
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  for (let word of str.split(' ')){
+    //      words.push(word[0].toUpperCase() + word.slice(1))
+    //  } console.log(words)
+
+
+
    
-  
-}
-console.log(capitalize('a little dog'))
+
+
+
 module.exports = capitalize;
 
+
+
+
+
+
+
+
+// function capitalize(str) {
+
+//   const words = [];
+
+// for (let word of str.split(' ')){
+//     words.push(word[0].toUpperCase() + word.slice(1));
+// }
+// return words.join(' ');
+   
+  
+// }
+// console.log(capitalize('a little dog'))
+// module.exports = capitalize;
 
 
 

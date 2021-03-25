@@ -13,10 +13,31 @@ function anagrams(stringA, stringB) {
 
 
 }
-let stringA = "rAil safety"
-let stringB = "fairy tales"
 
-console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(''))
+
+
+
+// let strOne = "Hello! world"
+// let strTwo = "ollEH world!!!!!"
+
+
+// console.log(strOne.replace(/[^\w]/g, "").toLowerCase().split("").sort().join(''))
+// console.log(strTwo.replace(/[^\w]/g, "").toLowerCase().split("").sort().join(''))
+
+
+
+
+
+
+
+
+
+
+
+// let stringA = "rAil safety"
+// let stringB = "fairy tales"
+
+// console.log(stringA.replace(/[^\w]/g, "").toLowerCase().split('').sort().join(''))
 
 
 

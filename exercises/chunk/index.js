@@ -10,29 +10,31 @@
 
 
 
-
+// let array = [1,2,3,4];
+// let size = 2;
 function chunk(array, size) {
-const chunkedArray = [];
+  const chunked = [];
 
+    for (let element of array) {
+    const last = chunked[chunked.length-1];
 
-
-for (let el of array) {
-  const last = chunkedArray[chunkedArray.length -1];
-
-  if (!last || last.length === size){
-    chunkedArray.push([el]);
+    if (!last || last.length === size) {
+      chunked.push([element]);
+    }else {
+      last.push(element)
+    }
+    console.log(chunked)
   }
-  else {
-    last.push(el)
-  }
-}
-return chunkedArray;
+
+return chunked
 
 }
+console.log("*****")
+console.log(chunk([1,2,3,4], 2))
 
 
 
-console.log(chunk([1,2,3,4,5,6,7,8], 2))
+// console.log(chunk([1,2,3,4,5,6,7,8], 2))
 module.exports = chunk;
 
 
