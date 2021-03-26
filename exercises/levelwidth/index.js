@@ -11,6 +11,26 @@
 // 4       5
 // Answer: [1, 3, 2]
 
-function levelWidth(root) {}
+//with trees, usually have to do a depth first or breadth first iteration
+
+function levelWidth(root) {
+
+    const counters = [0];
+    const array = [root, 's'];
+
+    while (array.length > 1) {
+        const node = array.shift();
+
+        if (node === 's') {
+            counters.push(0);
+            array.push('s');
+        } else {
+            array.push(...node.children);
+            counters[counters.length -1]++;
+        }
+    }
+
+   return counters;
+}
 
 module.exports = levelWidth;

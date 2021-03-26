@@ -9,15 +9,35 @@
 // Output: [0,1]
 // Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 
+let array = [2, 3, 4, 3, 6, 7]
+
+let hashTwoSum = (array, sum) => {
+    let storageHash = {}
+    let nums = []
+    
+    for(let i in array){
+      let addend = sum - array[i]
+        
+        if (addend in storageHash){
+            nums.push([addend, array[i]])
+        }
+        storageHash[array[i]] = i
+    }
+    return nums
+}
+
+
+
+console.log(hashTwoSum(array, 6))
 
 
 
 //need to scale down time complexity
-var twoSum = function(nums, target) {
+// var twoSum = function(nums, target) {
     
-};
+// };
 
-console.log(twoSum([1,2,3,4], 7));
+// console.log(twoSum([1,2,3,4], 7));
 
 // let numbers = [];
     
