@@ -10,18 +10,21 @@
 
 
 function capitalize(str) {
-  const words = [];
+    
+    const words = [];
 
-  for(let word of str.split(' ')) {
-    words.push(word[0].toUpperCase() + word.slice(1))
-  }
+    for( let s of str.split(" ")){
+      words.push(s[0].toUpperCase() + s.slice(1))
+    }
+    console.log(words)
 
-
-return words.join(' ')
+    return(words.join (' '))
 
  }
 
- console.log(capitalize("I am a fun guy and i like to party"))
+
+
+console.log(capitalize("I am a fun guy and i like to party"))
 
 
 
@@ -39,7 +42,14 @@ return words.join(' ')
 
 
 
+//  const words = [];
 
+//  for(let word of str.split(' ')) {
+//    words.push(word[0].toUpperCase() + word.slice(1))
+//  }
+
+
+// return words.join(' ')
 
 
 
