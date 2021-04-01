@@ -17,8 +17,19 @@ function anagrams(stringA, stringB) {
 
 
 
-// let strOne = "Hello! world"
-// let strTwo = "ollEH world!!!!!"
+let strOne = "Hello! world"
+let strTwo = "ollEH world!!!!!"
+
+console.log(strOne.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+
+console.log(strTwo.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+
+
+
+
+
+
+
 
 
 // console.log(strOne.replace(/[^\w]/g, "").toLowerCase().split("").sort().join(''))

@@ -64,6 +64,6 @@ function matrix(n) {
 
 }
 
-console.log(matrix(3))
+console.log(matrix(2))
 
 module.exports = matrix;
