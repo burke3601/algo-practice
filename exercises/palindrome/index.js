@@ -20,7 +20,7 @@ function palindrome(str) {
   }
 
 }
-console.log(palindrome('abqwsdfervdsba'))
+console.log(palindrome('abccba'))
 
 module.exports = palindrome;
 
