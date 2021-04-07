@@ -21,6 +21,7 @@ function palindrome(str) {
 
 }
 console.log(palindrome('abccba'))
+console.log(palindrome('abc12112323412342435cba'))
 
 module.exports = palindrome;
 
