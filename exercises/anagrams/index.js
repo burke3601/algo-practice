@@ -9,20 +9,34 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-
-
+     if(stringA.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("") === stringB.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("")){
+         return "anagram match"
+     } else {
+         return "sorry Charlie"
+     }
 
 }
+console.log(anagrams("hello!!! WORld...", "olleH!?! world"));
+
+// let strOne = "Hello! world"
+// let strTwo = "ollEH world!!!!!"
+
+// console.log(strOne.replace(/[^\w]/g, "").toLowerCase().split("").sort().join(""))
+
+// console.log(strTwo.replace(/[^\w]/g, "").toLowerCase().split("").sort().join(""))
 
 
 
 
-let strOne = "Hello! world"
-let strTwo = "ollEH world!!!!!"
 
-console.log(strOne.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
 
-console.log(strTwo.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+
+
+
+
+// console.log(strOne.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+
+// console.log(strTwo.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
 
 
 
