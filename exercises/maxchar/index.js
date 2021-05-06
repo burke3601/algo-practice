@@ -32,6 +32,7 @@ function maxChar(str) {
 
 console.log(maxChar('abccccccd'))
 console.log(maxChar('1234567777777890'))
+console.log(maxChar('12345677777778ggggggggggg90'))
 
 
 
