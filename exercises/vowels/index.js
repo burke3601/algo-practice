@@ -8,15 +8,37 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-  const matches = str.match(/[aeiou]/gi);
+let count = 0;
+const checker = ["a", "e", "i", "o", "u"];
 
-  return matches ? matches.length : 0
+for(let char of str.toLowerCase()){
+    if (checker.includes(char)) {
+        count ++;
+    }
 }
 
-const word = "Hello There"
+return count;
+
+}
+
 console.log(vowels("hi there friend aaaaaa iiiiiigsdfkjasdffonsadkjcnads;voviadfnvoasndvoianvk;a"))
+console.log(vowels('asdfedeeeee'));
 
 module.exports = vowels;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let count = 0;
@@ -29,3 +51,11 @@ module.exports = vowels;
 // }
 
 // return count;
+
+
+
+
+
+// const matches = str.match(/[aeiou]/gi);
+
+//   return matches ? matches.length : 0

@@ -25,6 +25,8 @@ let test = 'i am a test'
 
 // console.log(test.slice(1))
 
+console.log("hi \npal")
+
 
 
 

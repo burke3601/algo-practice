@@ -33,13 +33,14 @@ function steps(n) {
            else {
                stair += ' ';
            }
+           console.log(stair)
        }
-
+       
        console.log(stair)
    }
 }
 
-console.log(steps(5))
+(steps(5))
 
 
 

@@ -20,7 +20,7 @@ function reverseInt(n) {
 }
 
 console.log(reverseInt(-1234))
-
+console.log(reverseInt(123))
 
 // let n = 654321
 // let reversed = n.toString().split('').reverse().join('')
